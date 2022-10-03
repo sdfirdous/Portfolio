@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>firdous-portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Open Sans", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green"></span></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+                    <a href="#" class="w3-bar-item w3-button">Firdous posted on your wall</a>
+                    <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3">
+                <!-- Profile -->
+                <div class="w3-card w3-round w3-white">
+                    <div class="w3-container">
+                        <h4 class="w3-center">My Profile</h4>
+                        <p class="w3-center"><img src="https://i.pinimg.com/originals/96/35/25/9635253363d4a9d3c931519dc6079ac2.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                        <hr>
+                        <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Student,<br>Web Deveoloper<br></p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Parbhani, <br> Maharashtra, <br> India.</p>
+                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> Oct-12, 2000</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="w3-card w3-round">
+                    <div class="w3-white">
+                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+                        <div id="Demo1" class="w3-hide w3-container">
+                            <p></p>
+                        </div>
+                        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Experiance</button>
+                        <div id="Demo2" class="w3-hide w3-container">
+                            <p style="width:100%">I have 2 years of experiance. <br><br>
+                                <span class="w3-tag w3-small w3-theme-d1"> 
+             <b >One year in SS Infotech</b></span><br>
+                                <span class="w3-tag w3-small w3-theme-l1">work description:<br>
+            As data entry operator</span>
+                                <br>
+                                <br>
+                                <span class="w3-tag w3-small w3-theme-d1"><b>One year in Reliance SMSL(Working)</b></span><br>
+                                <span class="w3-tag w3-small w3-theme-l1">Working description:<br>
+            Customer service advisor, Chat process(HINDI/ENGLISH)</span>
+
+
+                            </p>
+                        </div>
+                        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Document</button>
+                        <div id="Demo3" class="w3-hide w3-container">
+                            <div class="w3-row-padding">
+                                <br>
+                                <div class="w3-half">
+                                    <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="https://www.w3schools.com/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="https://www.w3schools.com/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="https://www.w3schools.com/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Interests -->
+                <div class="w3-card w3-round w3-white w3-hide-small">
+                    <div class="w3-container">
+                        <p>Interests</p>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-d5">News</span>
+                            <span class="w3-tag w3-small w3-theme-d4">Travlling</span>
+                            <span class="w3-tag w3-small w3-theme-d3">Drawing</span>
+                            <span class="w3-tag w3-small w3-theme-d2">Programming</span>
+                            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme">Games</span>
+                            <span class="w3-tag w3-small w3-theme-l1">Out door games</span>
+                            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                            <span class="w3-tag w3-small w3-theme-l5">Photography</span>
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Alert Box -->
+                <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+                    <p><strong>Hey!</strong></p>
+                    <p>People are looking at your profile. Find out who.</p>
+                </div>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div class="w3-col m7">
+
+                <div class="w3-row-padding">
+                    <div class="w3-col m12">
+                        <div class="w3-card w3-round w3-white">
+                            <div class="w3-container w3-padding">
+                                <h6 class="w3-opacity">
+                                    <h3><b>I'm Sd.Firdous</b></h3>A Web Deveoloper based in INDIA.</h6>
+                                <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+                                <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                    <img src="C:\Users\Admin\Desktop\firdousphoto" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>Syeda Firdous Fatema</h4><br>
+                    <hr class="w3-clear">
+                    <p>I’m Firdous, a Parbhani native who now lives in Pune. I am 21Years old. I have a degree in Arts and I have been working at Reliance as a 'Customer support advisor' from past one year. And now I am persuing Computer Application degree(BCA)
+                        from SRTMUN.</p>
+                    <div class="w3-row-padding" style="margin:0 -16px">
+                        <div class="w3-half">
+
+                        </div>
+                        <div class="w3-half">
+                            <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+                        </div>
+                    </div>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                    <img src="https://www.freeiconspng.com/thumbs/graduation-cap/graduation-cap-transparent-image-23.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px">
+                    <span class="w3-right w3-opacity">16 min</span>
+                    <h4>Education </h4><br>
+                    <hr class="w3-clear">
+                    <p>
+
+                        <head>
+                            <style>
+                                table,
+                                th,
+                                td {
+                                    border: 1px solid black;
+                                }
+                            </style>
+                        </head>
+
+                        <body>
+
+
+                            <table>
+                                <tr>
+                                    <th>courses</th>
+                                    <th>University</th>
+                                    <th>Year</th>
+                                </tr>
+                                <tr>
+                                    <td>BCA</td>
+                                    <td>SRTMUN</td>
+                                    <td>2022</td>
+
+                                </tr>
+                                <tr>
+                                    <td>BA</td>
+                                    <td>SRTMUN</td>
+                                    <td>2021-81%</td>
+                                </tr>
+                                <tr>
+                                    <td>HSC</td>
+                                    <td>Pune-Board</td>
+                                    <td>2018-78%</td>
+                                </tr>
+                                <tr>
+                                    <td>SSC</td>
+                                    <td>Aurangabad-Board</td>
+                                    <td>2021-68%</td>
+                                </tr>
+
+                            </table>
+                            <p><b> Other Skills:</b><br>
+                                <table style="width:100%">
+                                    <tr>
+                                        <th>Skills</th>
+                                        <th>Institute</th>
+                                        <th>Year</th>
+                                    </tr>
+                                    <tr>
+                                        <td>MS-CIT</td>
+                                        <td>Government</td>
+                                        <td>2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tally</td>
+                                        <td>Government of India</td>
+                                        <td>2017</td>
+                                    </tr>
+                                </table>
+                            </p>
+
+                        </body>
+                    </p>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                    <img src="https://thumbs.dreamstime.com/b/basic-rgb-161604952.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px">
+                    <span class="w3-right w3-opacity">32 min</span>
+                    <h4>Hobbies</h4><br>
+                    <hr class="w3-clear">
+                    <p>Have you seen this?</p>
+                    <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                    <p>I enjoy going to the forests. It is my hobby that I find very exciting. Traveling in forests leaves me refreshed and energized. I find myself close to nature in forest areas. I always like to be part of a nature group to go to a forest.
+                        I learn about the trees and animals from nature experts in such groups.I also want to capture each in every movemnet of my life.<br></p>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+                </div>
+
+                <!-- End Middle Column -->
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-col m2">
+                <div class="w3-card w3-round w3-white w3-center">
+                    <div class="w3-container">
+                        <p>Contact:</p>
+                        <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest" style="width:100%;">
+                        <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/sdfirdous313/" target="_blank">sdfirdous313</a></p>
+                        <p><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/sd.firdous.5" target="_blank">sdfirdous</a></P>
+                        <p><i class="fa-brands fa-snapchat"></i><a href="https://www.snapchat.com/add/firdous_fate247?share_id=65ZlaDoOs3U&locale=en-IN" target="_blank">sdfirdous</a></P>
+                        <div>
+                            <p>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><i class="fa-solid fa-envelope"></i><a href="mailto:firdousfatema313@gmail.com">
+Email</p>
+
+</a>
+                        </div>
+
+                        <p>contact me from the above link</p>
+                        <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-center">
+                    <div class="w3-container">
+                        <p>Friend Request</p>
+                        <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+                        <span>Jane Doe</span>
+                        <div class="w3-row w3-opacity">
+                            <div class="w3-half">
+                                <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+                            </div>
+                            <div class="w3-half">
+                                <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                    <p>ADS</p>
+                </div>
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+                    <p><i class="fa fa-bug w3-xxlarge"></i></p>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+        <h5>Footer</h5>
+    </footer>
+
+    <footer class="w3-container w3-theme-d5">
+        <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/sdfirdous313/" target="_blank">@sdfirdous313</a></p>
+    </footer>
+
+    <script>
+        // Accordion
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme-d1";
+            } else {
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+            }
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
